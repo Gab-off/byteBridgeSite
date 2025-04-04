@@ -1,0 +1,29 @@
+@import url(./colors.css);
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: var(--white);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+
