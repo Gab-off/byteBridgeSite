@@ -1,0 +1,128 @@
+.footer {
+    background-color: #161207; /* Fundo escuro */
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    position: relative;
+}
+
+.footer-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--white);
+}
+
+
+.destaque {
+    color: #F77F1D; /* Cor laranja */
+}
+
+hr {
+    width: 100%;
+    border: 1px solid white;
+    margin: 20px auto;
+}
+
+.footer-logo-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.contatos,
+.empresa {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contatos h2,
+.empresa h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    display: flex;
+
+}
+
+.contatos img,
+.empresa img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.contatos p,
+.empresa p {
+    font-size: 1rem;
+    display: flex;
+    gap: 8px;
+}
+
+.footer-logo {
+    width: 250px; 
+    height: auto;
+    position: relative;
+    top: 50px;
+}
+
+.footer::after {
+    content: "";
+    display: block;
+    width: 50%;
+    border: 1px solid white;
+    margin: 20px auto 0;
+    position: absolute;
+    right: 0px;
+    bottom: 100px;
+}
+
+@media (max-width: 1024px) {
+    .footer-logo-text {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-logo {
+        top: 0;
+        margin-top: 30px;
+    }
+    
+    .footer::after {
+        display: none;
+    }
+    
+    .contatos, .empresa {
+        align-items: center;
+        text-align: center;
+    }
+    
+    .contatos img, .empresa img {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    
+    .contatos p, .empresa p {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer h2 {
+        font-size: 1.5rem;
+    }
+    
+    .contatos h2, .empresa h2 {
+        font-size: 1.2rem;
+    }
+    
+    .footer-logo {
+        width: 200px;
+    }
+}
