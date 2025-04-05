@@ -1,6 +1,11 @@
 @import url(./geral.css);
+
+/* Cores gerais do site */
 @import url(./colors.css);
+
 @import url(./header.css);
-@import url(./main.css);
+
+@import url(./principal/main.css);
+@import url(./principal/textCarrousel.css);
 @import url(./section.css);
 @import url(./footer.css);

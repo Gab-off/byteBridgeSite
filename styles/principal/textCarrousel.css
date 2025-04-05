@@ -1,0 +1,18 @@
+@import url(../colors.css);
+
+.cardCarrousel {
+    background-color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardCarrousel div {
+    max-width: 90ch;
+}
+
+.cardCarrousel div p {
+    color: var(--black);
+    font-size: 76px;
+}
