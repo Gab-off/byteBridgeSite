@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  background: none;
+  border: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  width: 100%;
+  background: #fefadc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  max-width: 1440px;
+}
+
+.container,
+.nav-black,
+.nav-section_black,
+.nav-icons {
+  display: flex;
+}
+
+nav {
+  color: #fefadc;
+  width: 100%;
+}
+nav .container {
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+nav .nav-black {
+  background: #1d1a05;
+  align-items: center;
+  flex: 1;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=style.css.map */
