@@ -1,0 +1,24 @@
+@use "colors" as c;
+
+.container,
+.nav-black,
+.nav-section_black,
+.nav-icons {
+	display: flex;
+}
+
+nav {
+	color: c.$color-principal;
+	width: 100%;
+	.container {
+		align-items: center;
+		justify-content: space-between;
+		margin: 0 auto;
+	}
+	.nav-black {
+		background: c.$color-secondary;
+		align-items: center;
+		flex: 1;
+		justify-content: space-between;
+	}
+}
