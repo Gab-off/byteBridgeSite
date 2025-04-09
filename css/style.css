@@ -45,9 +45,11 @@ body {
 
 .container {
   max-width: 1440px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
-.container,
+nav .container,
 .nav-black,
 .nav-section_black,
 .nav-icons {
@@ -59,15 +61,75 @@ nav {
   width: 100%;
 }
 nav .container {
+  margin: 0 auto;
   align-items: center;
   justify-content: space-between;
-  margin: 0 auto;
+  gap: 20px;
+}
+@media (max-width: 767px) {
+  nav .container {
+    padding: 0;
+  }
 }
 nav .nav-black {
   background: #1d1a05;
   align-items: center;
   flex: 1;
   justify-content: space-between;
+  padding: 20px 0;
+  border-radius: 0 20px 20px 0;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+}
+@media (max-width: 999px) {
+  nav .nav-black {
+    padding: 10px 0;
+  }
+}
+@media (max-width: 767px) {
+  nav .nav-black {
+    justify-content: center;
+    border-radius: initial;
+  }
+}
+@media (max-width: 999px) {
+  nav .nav-black img {
+    width: 180px;
+  }
+}
+
+.nav-section_black {
+  margin-right: 50px;
+  gap: 25px;
+}
+@media (max-width: 767px) {
+  .nav-section_black {
+    display: none;
+  }
+}
+.nav-section_black a {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.75rem;
+}
+@media (max-width: 999px) {
+  .nav-section_black a {
+    font-size: 1.25rem;
+  }
+}
+
+.nav-icons {
+  gap: 20px;
+}
+@media (max-width: 767px) {
+  .nav-icons {
+    display: none;
+  }
+}
+.nav-icons a {
+  width: 40px;
+}
+.nav-icons a img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,8 @@
 @use "colors" as c;
+@use "fontes" as f;
+@use "responsive" as r;
 
-.container,
+nav .container,
 .nav-black,
 .nav-section_black,
 .nav-icons {
@@ -11,14 +13,60 @@ nav {
 	color: c.$color-principal;
 	width: 100%;
 	.container {
+		margin: 0 auto;
 		align-items: center;
 		justify-content: space-between;
-		margin: 0 auto;
+		gap: 20px;
+		@include r.respond-to("medium") {
+			padding: 0;
+		}
 	}
 	.nav-black {
 		background: c.$color-secondary;
 		align-items: center;
 		flex: 1;
 		justify-content: space-between;
+		padding: 20px 0;
+		border-radius: 0 20px 20px 0;
+		box-shadow: 0px 4px 4px 0px #00000040;
+		@include r.respond-to("large") {
+			padding: 10px 0;
+		}
+		@include r.respond-to("medium") {
+			justify-content: center;
+			border-radius: initial;
+		}
+		img {
+			@include r.respond-to("large") {
+				width: 180px;
+			}
+		}
+	}
+}
+
+.nav-section_black {
+	margin-right: 50px;
+	gap: 25px;
+	@include r.respond-to("medium") {
+		display: none;
+	}
+	a {
+		@include f.fonte(nav);
+		@include r.respond-to("large") {
+			font-size: f.rem(20);
+		}
+	}
+}
+
+.nav-icons {
+	gap: 20px;
+	@include r.respond-to("medium") {
+		display: none;
+	}
+	a {
+		width: 40px;
+		img {
+			width: 100%;
+		}
 	}
 }
