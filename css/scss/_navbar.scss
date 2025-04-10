@@ -30,10 +30,9 @@ nav {
 		border-radius: 0 20px 20px 0;
 		box-shadow: 0px 4px 4px 0px #00000040;
 		@include r.respond-to("large") {
-			padding: 10px 0;
+			padding: 10px 20px;
 		}
 		@include r.respond-to("medium") {
-			justify-content: center;
 			border-radius: initial;
 		}
 		img {
@@ -44,11 +43,71 @@ nav {
 	}
 }
 
+.label-menu,
+.checkbox {
+	display: none;
+}
+
+.label-menu {
+	@include f.fonte(nav);
+	@include r.respond-to("medium") {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		font-size: f.rem(15);
+		padding-block: 1rem;
+		cursor: pointer;
+	}
+	.hamburger {
+		border-top: 0.125rem solid;
+		width: 1.25rem;
+		&::before,
+		&::after {
+			content: " ";
+			display: block;
+			width: 1.25rem;
+			height: 0.125rem;
+			background: currentColor;
+			margin-top: 0.31rem;
+		}
+	}
+}
+
 .nav-section_black {
 	margin-right: 50px;
 	gap: 25px;
 	@include r.respond-to("medium") {
 		display: none;
+		position: absolute;
+		top: f.rem(83);
+		left: 0;
+		background: c.$color-secondary;
+		text-align: center;
+		width: 100%;
+	}
+	li {
+		padding: 5px 0;
+		position: relative;
+		&::after {
+			content: " ";
+			position: absolute;
+			width: 0;
+			height: 2px;
+			top: 50px;
+			left: 0;
+			background: c.$color-detail;
+			transition: 0.5s;
+		}
+		&:hover {
+			&::after {
+				width: 100%;
+			}
+		}
+		@include r.respond-to("medium") {
+			&:hover {
+				background: black;
+			}
+		}
 	}
 	a {
 		@include f.fonte(nav);

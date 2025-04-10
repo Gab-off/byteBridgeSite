@@ -4,10 +4,12 @@
 	@return math.div($px, 16) * 1rem;
 }
 
-@mixin fonte($ft) {
+@mixin fonte($ft, $size: 16) {
+	font-family: "Inter", sans-serif;
+	font-weight: 400;
 	@if $ft == nav {
-		font-family: "Inter", sans-serif;
-		font-weight: 400;
 		font-size: rem(28);
+	} @else if $ft == main {
+		font-size: rem($size);
 	}
 }
