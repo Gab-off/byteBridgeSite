@@ -79,31 +79,13 @@ nav {
 	}
 }
 
-.checkbox:checked ~ .nav-section_black {
-	display: block;
-	height: 100%;
-	visibility: initial;
-	overflow-y: auto;
-}
-
-.checkbox:checked ~ .label-menu .hamburger {
-	border-top-color: transparent;
-	&::before {
-		transform: rotate(135deg);
-	}
-	&::after {
-		transform: rotate(-135deg);
-		top: f.rem(-7);
-	}
-}
-
 .nav-section_black {
 	margin-right: 50px;
 	gap: 25px;
 	@include r.respond-to("medium") {
 		display: block;
 		position: absolute;
-		top: f.rem(75);
+		top: f.rem(74);
 		left: 0;
 		background: c.$color-secondary;
 		text-align: center;
@@ -116,6 +98,7 @@ nav {
 	}
 	li {
 		padding: 10px;
+		transition: 0.3s;
 		&::after {
 			content: " ";
 			position: absolute;
@@ -145,6 +128,24 @@ nav {
 		@include r.respond-to("large") {
 			font-size: f.rem(20);
 		}
+	}
+}
+
+.checkbox:checked ~ .nav-section_black {
+	display: block;
+	height: calc(100vh - f.rem(75));
+	visibility: initial;
+	overflow-y: auto;
+}
+
+.checkbox:checked ~ .label-menu .hamburger {
+	border-top-color: transparent;
+	&::before {
+		transform: rotate(135deg);
+	}
+	&::after {
+		transform: rotate(-135deg);
+		top: f.rem(-7);
 	}
 }
 
