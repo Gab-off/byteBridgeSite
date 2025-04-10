@@ -85,7 +85,7 @@ nav {
 	@include r.respond-to("medium") {
 		display: block;
 		position: absolute;
-		top: f.rem(74);
+		top: f.rem(70);
 		left: 0;
 		background: c.$color-secondary;
 		text-align: center;
