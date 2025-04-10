@@ -19,12 +19,6 @@ nav {
 		gap: 20px;
 		@include r.respond-to("medium") {
 			padding: 0;
-			.checkbox:checked ~ .nav-section_black {
-				display: block;
-				height: 100%;
-				visibility: initial;
-				overflow-y: auto;
-			}
 		}
 	}
 	.nav-black {
@@ -79,7 +73,27 @@ nav {
 			height: 0.125rem;
 			background: currentColor;
 			margin-top: 0.31rem;
+			position: relative;
+			transition: 0.3s;
 		}
+	}
+}
+
+.checkbox:checked ~ .nav-section_black {
+	display: block;
+	height: 100%;
+	visibility: initial;
+	overflow-y: auto;
+}
+
+.checkbox:checked ~ .label-menu .hamburger {
+	border-top-color: transparent;
+	&::before {
+		transform: rotate(135deg);
+	}
+	&::after {
+		transform: rotate(-135deg);
+		top: f.rem(-7);
 	}
 }
 
@@ -89,7 +103,7 @@ nav {
 	@include r.respond-to("medium") {
 		display: block;
 		position: absolute;
-		top: f.rem(72);
+		top: f.rem(67);
 		left: 0;
 		background: c.$color-secondary;
 		text-align: center;
