@@ -19,6 +19,12 @@ nav {
 		gap: 20px;
 		@include r.respond-to("medium") {
 			padding: 0;
+			.checkbox:checked ~ .nav-section_black {
+				display: block;
+				height: 100%;
+				visibility: initial;
+				overflow-y: auto;
+			}
 		}
 	}
 	.nav-black {
@@ -37,7 +43,10 @@ nav {
 		}
 		img {
 			@include r.respond-to("large") {
-				width: 180px;
+				max-width: 180px;
+				@include r.respond-to("medium") {
+					width: 130px;
+				}
 			}
 		}
 	}
@@ -77,17 +86,21 @@ nav {
 	margin-right: 50px;
 	gap: 25px;
 	@include r.respond-to("medium") {
-		display: none;
+		display: block;
 		position: absolute;
-		top: f.rem(83);
+		top: f.rem(74);
 		left: 0;
 		background: c.$color-secondary;
 		text-align: center;
 		width: 100%;
+		height: 0;
+		z-index: 1;
+		visibility: hidden;
+		transition: 0.5s;
+		overflow-y: hidden;
 	}
 	li {
 		padding: 5px 0;
-		position: relative;
 		&::after {
 			content: " ";
 			position: absolute;
@@ -104,6 +117,9 @@ nav {
 			}
 		}
 		@include r.respond-to("medium") {
+			&::after {
+				content: none;
+			}
 			&:hover {
 				background: black;
 			}
