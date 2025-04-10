@@ -261,9 +261,9 @@ main {
   }
   .main-left h1 {
     margin-bottom: 20px;
-    max-width: 40ch;
+    max-width: 20ch;
     text-align: center;
-    font-size: 3.125rem;
+    font-size: 2.5rem;
   }
   .main-left p {
     margin-top: 30px;
