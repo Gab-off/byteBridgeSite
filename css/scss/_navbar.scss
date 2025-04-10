@@ -97,7 +97,7 @@ nav {
 		overflow-y: hidden;
 	}
 	li {
-		// padding: 10px;
+		padding: 17px;
 		transition: 0.3s;
 		&::after {
 			content: " ";
@@ -133,7 +133,7 @@ nav {
 
 .checkbox:checked ~ .nav-section_black {
 	display: block;
-	height: calc(100vh - f.rem(75));
+	height: calc(100vh - f.rem(70));
 	visibility: initial;
 	overflow-y: auto;
 }

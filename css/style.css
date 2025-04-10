@@ -164,6 +164,7 @@ nav .nav-black {
   }
 }
 .nav-section_black li {
+  padding: 17px;
   transition: 0.3s;
 }
 .nav-section_black li::after {
@@ -200,7 +201,7 @@ nav .nav-black {
 
 .checkbox:checked ~ .nav-section_black {
   display: block;
-  height: calc(100vh - 4.6875rem);
+  height: calc(100vh - 4.375rem);
   visibility: initial;
   overflow-y: auto;
 }
