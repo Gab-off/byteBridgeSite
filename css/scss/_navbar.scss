@@ -103,7 +103,7 @@ nav {
 	@include r.respond-to("medium") {
 		display: block;
 		position: absolute;
-		top: f.rem(67);
+		top: f.rem(75);
 		left: 0;
 		background: c.$color-secondary;
 		text-align: center;
@@ -115,7 +115,7 @@ nav {
 		overflow-y: hidden;
 	}
 	li {
-		padding: 5px 0;
+		padding-bottom: 10px;
 		&::after {
 			content: " ";
 			position: absolute;
