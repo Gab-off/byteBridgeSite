@@ -40,6 +40,7 @@ nav {
 		}
 		@include r.respond-to("medium") {
 			border-radius: initial;
+			box-shadow: initial;
 		}
 		img {
 			@include r.respond-to("large") {

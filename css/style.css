@@ -100,6 +100,7 @@ nav .nav-black {
 @media (max-width: 767px) {
   nav .nav-black {
     border-radius: initial;
+    box-shadow: initial;
   }
 }
 @media (max-width: 999px) {
