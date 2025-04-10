@@ -164,7 +164,6 @@ nav .nav-black {
   }
 }
 .nav-section_black li {
-  padding: 10px;
   transition: 0.3s;
 }
 .nav-section_black li::after {
