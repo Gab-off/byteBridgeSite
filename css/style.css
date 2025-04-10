@@ -48,6 +48,12 @@ body {
   padding-left: 40px;
   padding-right: 40px;
 }
+@media (max-width: 767px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 
 nav .container,
 .nav-black,
@@ -261,7 +267,7 @@ main {
   }
   .main-left h1 {
     margin-bottom: 20px;
-    max-width: 20ch;
+    max-width: initial;
     text-align: center;
     font-size: 2.5rem;
   }

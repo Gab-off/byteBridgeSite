@@ -1,3 +1,5 @@
+@use "responsive" as r;
+
 body {
 	width: 100%;
 	background: #fefadc;
@@ -10,4 +12,8 @@ body {
 	max-width: 1440px;
 	padding-left: 40px;
 	padding-right: 40px;
+	@include r.respond-to("medium") {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 }
