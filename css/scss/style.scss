@@ -5,14 +5,17 @@
 @forward "colors";
 @forward "fontes";
 
+
+//Index
 // Navbar
 @forward "navbar";
-
 // Main-section
-@forward "main";
+@forward "./index/main";
+// Section Banners
+@forward "./index/banners";
+// Section cards
+@forward "./index/cards";
 
-//pagDatails
-//cards
-@forward "cards";
-@forward "details";
-@forward "comments";
+//FOOTER
+@forward "footer";
+

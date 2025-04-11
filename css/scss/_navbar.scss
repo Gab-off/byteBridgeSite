@@ -38,23 +38,24 @@ nav {
 		}
 		img {
 			@include r.respond-to("large") {
-				max-width: 180px;
+				width: 130px;
 				@include r.respond-to("medium") {
-					width: 130px;
 				}
 			}
 		}
 	}
 }
 
-.label-menu,
-.checkbox {
+.btn-menu {
 	display: none;
+	color: c.$color-principal;
 }
 
-.label-menu {
+.btn-menu {
 	@include f.fonte(nav);
 	@include r.respond-to("medium") {
+		background: none;
+		border: none;
 		display: flex;
 		align-items: center;
 		gap: 0.5rem;
@@ -79,31 +80,17 @@ nav {
 	}
 }
 
-.checkbox:checked ~ .nav-section_black {
-	display: block;
-	height: 100%;
-	visibility: initial;
-	overflow-y: auto;
-}
-
-.checkbox:checked ~ .label-menu .hamburger {
-	border-top-color: transparent;
-	&::before {
-		transform: rotate(135deg);
-	}
-	&::after {
-		transform: rotate(-135deg);
-		top: f.rem(-7);
-	}
-}
 
 .nav-section_black {
 	margin-right: 50px;
-	gap: 25px;
+	gap: 10px;
+	@include r.respond-to("large") {
+		margin-right: initial;
+	}
 	@include r.respond-to("medium") {
 		display: block;
 		position: absolute;
-		top: f.rem(75);
+		top: f.rem(70);
 		left: 0;
 		background: c.$color-secondary;
 		text-align: center;
@@ -115,22 +102,10 @@ nav {
 		overflow-y: hidden;
 	}
 	li {
-		padding: 10px;
-		&::after {
-			content: " ";
-			position: absolute;
-			width: 0;
-			height: 2px;
-			top: 50px;
-			left: 0;
-			background: c.$color-detail;
-			transition: 0.5s;
-		}
-		&:hover {
-			&::after {
-				width: 100%;
-			}
-		}
+
+		// padding: 17px;
+		transition: 0.3s;
+
 		@include r.respond-to("medium") {
 			&::after {
 				content: none;
@@ -141,10 +116,50 @@ nav {
 		}
 	}
 	a {
+		padding: 10px;
 		@include f.fonte(nav);
+		position: relative;
+		&::after {
+			content: "";
+			position: absolute;
+			width: 0;
+			height: 3px;
+			top: 45px;
+			left: 0;
+			background: c.$color-detail;
+			transition: 0.5s;
+		}
+		&:hover {
+			&::after {
+				width: 100%;
+			}
+		}
+
 		@include r.respond-to("large") {
 			font-size: f.rem(20);
+			&::after {
+				top: 40px;
+			}
 		}
+	}
+}
+
+.nav-black.active {
+	.hamburger {
+		border-top-color: transparent;
+		&::before {
+			transform: rotate(135deg);
+		}
+		&::after {
+			transform: rotate(-135deg);
+			top: f.rem(-7);
+		}
+	}
+	.nav-section_black {
+		display: block;
+		height: calc(100vh - f.rem(70));
+		visibility: initial;
+		overflow-y: auto;
 	}
 }
 
