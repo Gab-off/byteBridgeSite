@@ -382,4 +382,109 @@ main {
   font-size: 1.625rem;
 }
 
+footer {
+  padding: 70px 0;
+  background: #1d1a05;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+footer h2 {
+  color: #fefadc;
+  text-align: center;
+  font-size: 4.75rem;
+  font-weight: 300;
+  max-width: 21ch;
+  margin-bottom: 70px;
+}
+footer h2 span {
+  color: #fe7f2d;
+  font-weight: 500;
+}
+footer h2::after {
+  content: "";
+  position: absolute;
+  width: 95%;
+  height: 3px;
+  background: #fefadc;
+  top: 350px;
+  left: 32.5px;
+}
+
+.colums {
+  color: #fefadc;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 30px;
+  position: relative;
+}
+.colums::after {
+  content: "";
+  position: absolute;
+  background: #fefadc;
+  width: 720px;
+  height: 3px;
+  right: -250px;
+  bottom: -20px;
+}
+.colums .column {
+  font-size: 1.75rem;
+  font-weight: 300;
+}
+.colums .column .column_title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.colums .img {
+  display: flex;
+  align-items: center;
+}
+.colums .img img {
+  width: 300px;
+}
+
+.contato li,
+.empresa li {
+  position: relative;
+}
+.contato li a::before,
+.empresa li a::before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+a.telefone::before {
+  background-image: url(/img-contato-empresa/whats.svg);
+}
+
+a.tiktok::before {
+  background-image: url(/img-contato-empresa/tiktok.svg);
+}
+
+a.instagram::before {
+  background-image: url(/img-contato-empresa/instagram.svg);
+}
+
+a.facebook::before {
+  background-image: url(/img-contato-empresa/facebook.svg);
+}
+
+a.depoimento::before {
+  background-image: url(/img-contato-empresa/depoimento.svg);
+}
+
+a.email::before {
+  background-image: url(/img-contato-empresa/conosco.svg);
+}
+
 /*# sourceMappingURL=style.css.map */
