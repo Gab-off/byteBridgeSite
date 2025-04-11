@@ -108,18 +108,20 @@ nav .nav-black {
   }
 }
 
-.label-menu,
-.checkbox {
+.btn-menu {
   display: none;
+  color: #fefadc;
 }
 
-.label-menu {
+.btn-menu {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 1.75rem;
 }
 @media (max-width: 767px) {
-  .label-menu {
+  .btn-menu {
+    background: none;
+    border: none;
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -128,11 +130,11 @@ nav .nav-black {
     cursor: pointer;
   }
 }
-.label-menu .hamburger {
+.btn-menu .hamburger {
   border-top: 0.125rem solid;
   width: 1.25rem;
 }
-.label-menu .hamburger::before, .label-menu .hamburger::after {
+.btn-menu .hamburger::before, .btn-menu .hamburger::after {
   content: " ";
   display: block;
   width: 1.25rem;
@@ -199,22 +201,21 @@ nav .nav-black {
   }
 }
 
-.checkbox:checked ~ .nav-section_black {
+.nav-black.active .hamburger {
+  border-top-color: transparent;
+}
+.nav-black.active .hamburger::before {
+  transform: rotate(135deg);
+}
+.nav-black.active .hamburger::after {
+  transform: rotate(-135deg);
+  top: -0.4375rem;
+}
+.nav-black.active .nav-section_black {
   display: block;
   height: calc(100vh - 4.375rem);
   visibility: initial;
   overflow-y: auto;
-}
-
-.checkbox:checked ~ .label-menu .hamburger {
-  border-top-color: transparent;
-}
-.checkbox:checked ~ .label-menu .hamburger::before {
-  transform: rotate(135deg);
-}
-.checkbox:checked ~ .label-menu .hamburger::after {
-  transform: rotate(-135deg);
-  top: -0.4375rem;
 }
 
 .nav-icons {
