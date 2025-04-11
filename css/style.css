@@ -53,6 +53,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 100vh;
   font-family: "Inter", sans-serif;
 }
 
@@ -141,7 +142,8 @@ nav .nav-black {
   border-top: 0.125rem solid;
   width: 1.25rem;
 }
-.btn-menu .hamburger::before, .btn-menu .hamburger::after {
+.btn-menu .hamburger::before,
+.btn-menu .hamburger::after {
   content: " ";
   display: block;
   width: 1.25rem;
@@ -488,3 +490,302 @@ a.email::before {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/* Estilos para a página Nossa História */
+.historia-page {
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+.historia-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 80px;
+}
+
+.title-box {
+  background-color: #fe7f2d;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.title-box h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  color: #1d1a05;
+}
+
+.title-box span {
+  color: #fefadc;
+  font-weight: 600;
+}
+
+.year-mark h2 {
+  font-size: 5rem;
+  font-weight: 500;
+  color: #fe7f2d;
+  margin-bottom: 40px;
+}
+
+.historia-content p {
+  font-size: 2rem;
+  max-width: 60ch;
+  color: #1d1a05;
+  line-height: 1.5;
+}
+
+.timeline {
+  margin-top: 100px;
+}
+
+.timeline-item {
+  display: flex;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: -60px;
+  width: 3px;
+  background-color: #fe7f2d;
+  z-index: -1;
+}
+
+.timeline-item:last-child::before {
+  bottom: 0;
+}
+
+.timeline-date {
+  min-width: 120px;
+  margin-right: 40px;
+}
+
+.timeline-date h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #fe7f2d;
+}
+
+.timeline-content {
+  background-color: #fefadc;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #1d1a05;
+}
+
+.timeline-content p {
+  font-size: 1.25rem;
+  color: #666;
+}
+
+/* Estilos para a página Nossa Equipe */
+.equipe-page {
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+.equipe-header {
+  margin-bottom: 50px;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 100px;
+}
+
+.team-member {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.team-member p {
+  color: #1d1a05;
+}
+
+.member-photo {
+  margin-right: 20px;
+}
+
+.member-photo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #fe7f2d;
+  object-fit: cover;
+}
+
+.member-info {
+  flex-grow: 1;
+  position: relative;
+  z-index: 1;
+  background: #fefadc;
+  padding: 15px;
+}
+
+.member-skills {
+  display: flex;
+  margin-bottom: 15px;
+  gap: 15px;
+}
+
+.member-skills span {
+  width: 50px;
+  height: 0;
+  transition: 0.5s;
+}
+
+.team-member:hover .member-skills span {
+  height: 50px;
+}
+
+.html {
+  background-image: url("../img/skills/html.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.skill-icon.css {
+  background-image: url("../img/skills/css.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.skill-icon.js {
+  background-image: url("../img/skills/js.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.skill-icon.figma {
+  background-image: url("../img/skills/figma.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.skill-icon.sql {
+  background-image: url("../img/skills/sql.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.member-name {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #fe7f2d;
+  margin-bottom: 5px;
+}
+
+.member-role {
+  font-size: 1.25rem;
+  color: #fefadc;
+}
+
+/* Estilos para análise SWOT */
+.swot-analysis {
+  margin-top: 80px;
+}
+
+.swot-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.swot-column {
+  flex: 1;
+  padding: 30px;
+  background-color: #fefadc;
+  border-radius: 10px;
+}
+
+.swot-column.threats,
+.swot-column.opportunities {
+  background-color: #1d1a05;
+  color: #fefadc;
+}
+
+.swot-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #fe7f2d;
+}
+
+.swot-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.swot-column li {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.swot-column span {
+  color: #fe7f2d;
+  font-weight: 500;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 999px) {
+  .historia-content p {
+    font-size: 1.5rem;
+  }
+
+  .timeline-date h3 {
+    font-size: 2rem;
+  }
+
+  .title-box h1 {
+    font-size: 3rem;
+  }
+
+  .swot-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+  .historia-content p {
+    font-size: 1.25rem;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+  }
+
+  .timeline-date {
+    margin-bottom: 20px;
+  }
+
+  .team-members {
+    flex-direction: column;
+  }
+
+  .swot-column li {
+    font-size: 1.25rem;
+  }
+}

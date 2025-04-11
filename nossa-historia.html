@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Nossa História - Byte Ridge</title>
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<nav>
+			<div class="container">
+				<div class="nav-black">
+					<img src="./img/logo-white.svg" alt="" class="logo" />
+					<button
+						class="btn-menu"
+						aria-label="Abrir Menu"
+						aria-haspopup="true"
+						aria-controls="menu"
+						aria-expanded="false"
+					>
+						Menu <span class="hamburger"></span>
+					</button>
+					<ul class="nav-section_black" role="menu" id="menu">
+						<li><a href="#">Quem somos</a></li>
+						<li><a href="#">Serviços</a></li>
+						<li><a href="#">Portfolio</a></li>
+					</ul>
+				</div>
+				<div class="nav-icons">
+					<a href="#"><img src="./img/suporte.svg" alt="sol" /></a
+					><a href="#"
+						><img src="./img/person.svg" alt="icone de uma pessoa"
+					/></a>
+				</div>
+			</div>
+		</nav>
+
+		<main class="historia-page">
+			<div class="container">
+				<div class="historia-header">
+					<div class="title-box">
+						<h1>NOSSA <span>HISTÓRIA</span></h1>
+					</div>
+
+					<div class="year-mark">
+						<h2>2025</h2>
+					</div>
+
+					<div class="historia-content">
+						<p>
+							Começamos a trabalhar juntos por meio da necessidade
+							de entregar um trabalho de conclusão de curso.
+							Encontramos a possibilidade de criar uma agência de
+							sites, seguimos trabalhando muito para realizar
+							trabalhos excepcionalmente profissionais.
+						</p>
+					</div>
+				</div>
+
+				<section class="timeline">
+					<div class="timeline-item">
+						<div class="timeline-date">
+							<h3>2025</h3>
+						</div>
+						<div class="timeline-content">
+							<h4>Fundação da Byte Ridge</h4>
+							<p>
+								Nossa jornada começou como um projeto de TCC,
+								mas rapidamente percebemos o potencial para
+								transformá-lo em um empreendimento real.
+							</p>
+						</div>
+					</div>
+
+					<div class="timeline-item">
+						<div class="timeline-date">
+							<h3>2025</h3>
+						</div>
+						<div class="timeline-content">
+							<h4>Primeiros Clientes</h4>
+							<p>
+								Conquistamos nossos primeiros clientes e
+								começamos a desenvolver projetos profissionais
+								para pequenas empresas locais.
+							</p>
+						</div>
+					</div>
+
+					<div class="timeline-item">
+						<div class="timeline-date">
+							<h3>2025</h3>
+						</div>
+						<div class="timeline-content">
+							<h4>Expansão da Equipe</h4>
+							<p>
+								Com o crescimento da demanda, expandimos nossa
+								equipe para incluir especialistas em diversas
+								áreas de desenvolvimento web.
+							</p>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+
+		<footer>
+			<div class="container">
+				<h2 class="footer-title">
+					ByteBrigde <span>realizando</span> serviços com
+					profissionalismo e <span>ética</span>.
+				</h2>
+				<div class="colums">
+					<div class="column">
+						<h3 class="column_title">Contatos</h3>
+						<ul class="contato">
+							<li>
+								<a class="telefone" href="tel:+5511987654321"
+									>(11) 98765-4321</a
+								>
+							</li>
+							<li>
+								<a
+									class="tiktok"
+									href="https://tiktok.com/@bytebridge"
+									target="_blank"
+									>@bytebridge</a
+								>
+							</li>
+							<li>
+								<a
+									class="instagram"
+									href="https://instagram.com/bytebridge"
+									target="_blank"
+									>@bytebridge</a
+								>
+							</li>
+							<li>
+								<a
+									class="facebook"
+									href="https://facebook.com/bytebridge"
+									target="_blank"
+									>/bytebridge</a
+								>
+							</li>
+						</ul>
+					</div>
+					<div class="column empresa">
+						<h3 class="column_title">Empresa</h3>
+						<ul>
+							<li>
+								<a class="depoimento" href="#">Depoimentos</a>
+							</li>
+							<li>
+								<a class="email" href="#">Trabalhe conosco</a>
+							</li>
+						</ul>
+					</div>
+					<div class="column img">
+						<div class="column-img_logo">
+							<img src="./img/logo-white.svg" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script>
+			const btnMenu = document.querySelector(".btn-menu");
+			const nav = document.querySelector(".nav-black");
+
+			btnMenu.addEventListener("click", () => {
+				nav.classList.toggle("active");
+			});
+		</script>
+	</body>
+</html>
