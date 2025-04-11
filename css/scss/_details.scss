@@ -1,0 +1,70 @@
+@use "fontes" as f;
+@use "colors" as c;
+@use "responsive" as r;
+
+.details {
+	@include f.fonte(main);
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 80vh;
+    margin-top: 80px;
+    .block1, .block2, .block3, .block4 {
+        justify-items: baseline;
+        width: 50%;
+        height: 50%;
+        font-size: 26px;
+        font-weight: 600;
+
+        @include r.respond-to("large") {
+            font-size: 20px;
+        }
+    }
+
+    .block1, .block4 {
+        background-color: c.$color-secondary;
+        color: c.$color-principal;
+        padding: 30px 0px 0px 40px;
+        border-radius: 7px;
+        span {
+            color: c.$color-detail;
+        }
+    }
+
+    .block2 {
+        padding: 10px 0px 0px 10px;
+    }
+
+    .block3 {
+        padding: 20px 20px;
+        justify-items: end;
+        span {
+            display: flex;
+            justify-content: end;
+        }
+    }
+
+    @include r.respond-to("intermedium") {
+        margin-top: 520px;
+    }
+
+    @include r.respond-to("medium") {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        .block1, .block2, .block3, .block4 {
+            flex: 0 0 auto;
+            width: 100%;
+            padding: 30px 0px;
+            justify-items: center;
+        }
+        .block3 {
+            padding: 40px 20px;
+            justify-items: center;
+            span {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}
+
