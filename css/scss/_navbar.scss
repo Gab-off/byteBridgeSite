@@ -80,6 +80,7 @@ nav {
 	}
 }
 
+
 .nav-section_black {
 	margin-right: 50px;
 	gap: 10px;
@@ -101,6 +102,7 @@ nav {
 		overflow-y: hidden;
 	}
 	li {
+
 		// padding: 17px;
 		transition: 0.3s;
 
@@ -132,6 +134,7 @@ nav {
 				width: 100%;
 			}
 		}
+
 		@include r.respond-to("large") {
 			font-size: f.rem(20);
 			&::after {

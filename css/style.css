@@ -7,6 +7,7 @@
 }
 
 body {
+  min-height: 100vh;
   line-height: 1.5;
 }
 
@@ -47,13 +48,16 @@ h6 {
   line-height: 1;
 }
 
+
 body {
   width: 100%;
   background: #fefadc;
   display: flex;
   flex-direction: column;
   align-items: center;
+
   font-family: "Inter", sans-serif;
+
 }
 
 .container {
@@ -112,6 +116,7 @@ nav .nav-black {
 }
 @media (max-width: 999px) {
   nav .nav-black img {
+
     width: 130px;
   }
 }
@@ -121,14 +126,17 @@ nav .nav-black {
 }
 
 .btn-menu {
+
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 1.75rem;
 }
 @media (max-width: 767px) {
+
   .btn-menu {
     background: none;
     border: none;
+
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -137,12 +145,14 @@ nav .nav-black {
     cursor: pointer;
   }
 }
+
 .btn-menu .hamburger {
   border-top: 0.125rem solid;
   width: 1.25rem;
 }
 .btn-menu .hamburger::before,
 .btn-menu .hamburger::after {
+
   content: " ";
   display: block;
   width: 1.25rem;
@@ -152,6 +162,7 @@ nav .nav-black {
   position: relative;
   transition: 0.3s;
 }
+
 
 .nav-section_black {
   margin-right: 50px;
@@ -166,6 +177,7 @@ nav .nav-black {
   .nav-section_black {
     display: block;
     position: absolute;
+
     top: 4.375rem;
     left: 0;
     background: #1d1a05;
@@ -179,6 +191,7 @@ nav .nav-black {
   }
 }
 .nav-section_black li {
+
   transition: 0.3s;
 }
 @media (max-width: 767px) {
@@ -190,6 +203,7 @@ nav .nav-black {
   }
 }
 .nav-section_black a {
+
   padding: 10px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -213,6 +227,7 @@ nav .nav-black {
   .nav-section_black a {
     font-size: 1.25rem;
   }
+
   .nav-section_black a::after {
     top: 40px;
   }
@@ -251,6 +266,7 @@ nav .nav-black {
 }
 
 main {
+
   margin-top: 50px;
   margin-bottom: 200px;
   font-family: "Inter", sans-serif;
@@ -330,6 +346,7 @@ main {
     margin-bottom: 30px;
   }
 }
+
 
 .banners {
   background: #fff;
