@@ -425,7 +425,7 @@ main {
   flex-wrap: wrap;
   width: 80%;
   height: 80vh;
-  margin-top: 80px;
+  margin-top: 120px;
 }
 .details .block1, .details .block2, .details .block3, .details .block4 {
   justify-items: baseline;
@@ -449,7 +449,7 @@ main {
   color: #fe7f2d;
 }
 .details .block2 {
-  padding: 10px 0px 0px 10px;
+  padding: 10px 0px 10px 10px;
 }
 .details .block3 {
   padding: 20px 20px;
@@ -461,27 +461,167 @@ main {
 }
 @media (max-width: 899px) {
   .details {
-    margin-top: 520px;
+    margin-top: 540px;
   }
 }
 @media (max-width: 767px) {
   .details {
     flex-direction: column;
     flex-wrap: nowrap;
+    gap: 16px;
   }
   .details .block1, .details .block2, .details .block3, .details .block4 {
     flex: 0 0 auto;
     width: 100%;
-    padding: 30px 0px;
+    padding: 50px 0px;
     justify-items: center;
+    background-color: #1d1a05;
+    color: #fefadc;
+  }
+  .details .block2 {
+    padding: 30px 20px;
   }
   .details .block3 {
-    padding: 40px 20px;
+    padding-top: 70px;
     justify-items: center;
   }
   .details .block3 span {
     display: flex;
     justify-content: center;
+  }
+  .details .block4 {
+    padding-top: 90px;
+  }
+}
+
+.comments {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  height: 90vh;
+  margin-top: 100px;
+  gap: 16px;
+}
+.comments .comment1, .comments .comment2, .comments .comment3 {
+  border: 3px solid #1d1a05;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+  height: 100%;
+  border-radius: 7px;
+}
+.comments .comment1 .perfil, .comments .comment2 .perfil, .comments .comment3 .perfil {
+  display: flex;
+  margin-top: 40px;
+  width: 100%;
+  height: 100px;
+}
+.comments .comment1 .perfil img, .comments .comment2 .perfil img, .comments .comment3 .perfil img {
+  width: 40%;
+}
+.comments .comment1 .perfil .emphasis, .comments .comment2 .perfil .emphasis, .comments .comment3 .perfil .emphasis {
+  font-size: 26px;
+  font-weight: 700;
+  color: #fe7f2d;
+}
+.comments .comment1 .perfil .sub-title, .comments .comment2 .perfil .sub-title, .comments .comment3 .perfil .sub-title {
+  font-size: 18px;
+  font-weight: 400;
+}
+.comments .comment1 .text1, .comments .comment1 .text2, .comments .comment1 .text3, .comments .comment2 .text1, .comments .comment2 .text2, .comments .comment2 .text3, .comments .comment3 .text1, .comments .comment3 .text2, .comments .comment3 .text3 {
+  display: flex;
+  font-size: 26px;
+  font-weight: 600;
+  width: 100%;
+  margin-left: 40px;
+  margin-right: 20px;
+}
+.comments .comment1 .text1 img, .comments .comment1 .text2 img, .comments .comment1 .text3 img, .comments .comment2 .text1 img, .comments .comment2 .text2 img, .comments .comment2 .text3 img, .comments .comment3 .text1 img, .comments .comment3 .text2 img, .comments .comment3 .text3 img {
+  align-self: flex-start;
+}
+.comments .comment1 .text1, .comments .comment2 .text1, .comments .comment3 .text1 {
+  margin-top: 30px;
+}
+.comments .comment1 .likes, .comments .comment2 .likes, .comments .comment3 .likes {
+  align-self: baseline;
+  margin-left: 40px;
+  width: 20%;
+}
+.comments .comment1 .detail, .comments .comment2 .detail, .comments .comment3 .detail {
+  font-size: 28px;
+  font-weight: 600;
+}
+.comments .comment1 .rating, .comments .comment2 .rating, .comments .comment3 .rating {
+  width: 70%;
+  margin-top: -10px;
+  margin-bottom: 30px;
+}
+.comments .comment1 .likes {
+  margin-top: 110px;
+}
+@media (max-width: 999px) {
+  .comments {
+    flex-direction: column;
+  }
+  .comments .comment1, .comments .comment2, .comments .comment3 {
+    width: 60%;
+  }
+  .comments .comment1 .perfil .emphasis, .comments .comment2 .perfil .emphasis, .comments .comment3 .perfil .emphasis {
+    font-size: 40px;
+  }
+  .comments .comment1 .perfil .sub-title, .comments .comment2 .perfil .sub-title, .comments .comment3 .perfil .sub-title {
+    font-size: 24px;
+  }
+  .comments .comment1 .text1, .comments .comment1 .text2, .comments .comment1 .text3, .comments .comment2 .text1, .comments .comment2 .text2, .comments .comment2 .text3, .comments .comment3 .text1, .comments .comment3 .text2, .comments .comment3 .text3 {
+    font-size: 24px;
+    width: 60%;
+    margin: 30px 0px;
+  }
+  .comments .comment1 .text1, .comments .comment2 .text1, .comments .comment3 .text1 {
+    margin-top: 50px;
+  }
+  .comments .comment1 .likes, .comments .comment2 .likes, .comments .comment3 .likes {
+    width: 15%;
+    margin-left: 105px;
+    margin-top: -5px;
+  }
+  .comments .comment1 .detail, .comments .comment2 .detail, .comments .comment3 .detail {
+    font-size: 26px;
+    margin-top: 10px;
+  }
+  .comments .comment1 .rating, .comments .comment2 .rating, .comments .comment3 .rating {
+    width: 60%;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .comments {
+    width: 100%;
+    margin-top: 730px;
+  }
+  .comments .comment1, .comments .comment2, .comments .comment3 {
+    width: 80%;
+  }
+  .comments .comment1 .perfil .emphasis, .comments .comment2 .perfil .emphasis, .comments .comment3 .perfil .emphasis {
+    font-size: 32px;
+  }
+  .comments .comment1 .perfil .sub-title, .comments .comment2 .perfil .sub-title, .comments .comment3 .perfil .sub-title {
+    font-size: 20px;
+  }
+  .comments .comment1 .text1, .comments .comment1 .text2, .comments .comment1 .text3, .comments .comment2 .text1, .comments .comment2 .text2, .comments .comment2 .text3, .comments .comment3 .text1, .comments .comment3 .text2, .comments .comment3 .text3 {
+    font-size: 20px;
+  }
+  .comments .comment1 .detail, .comments .comment2 .detail, .comments .comment3 .detail {
+    font-size: 22px;
+  }
+  .comments .comment1 .rating, .comments .comment2 .rating, .comments .comment3 .rating {
+    width: 50%;
   }
 }
 

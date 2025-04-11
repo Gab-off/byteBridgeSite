@@ -8,7 +8,7 @@
     flex-wrap: wrap;
     width: 80%;
     height: 80vh;
-    margin-top: 80px;
+    margin-top: 120px;
     .block1, .block2, .block3, .block4 {
         justify-items: baseline;
         width: 50%;
@@ -32,7 +32,7 @@
     }
 
     .block2 {
-        padding: 10px 0px 0px 10px;
+        padding: 10px 0px 10px 10px;
     }
 
     .block3 {
@@ -45,25 +45,37 @@
     }
 
     @include r.respond-to("intermedium") {
-        margin-top: 520px;
+        margin-top: 540px;
     }
 
     @include r.respond-to("medium") {
         flex-direction: column;
         flex-wrap: nowrap;
+        gap: 16px;
         .block1, .block2, .block3, .block4 {
             flex: 0 0 auto;
             width: 100%;
-            padding: 30px 0px;
+            padding: 50px 0px;
             justify-items: center;
+            background-color: c.$color-secondary;
+            color: c.$color-principal;
         }
+        
+        .block2 {
+            padding: 30px 20px;
+        }
+
         .block3 {
-            padding: 40px 20px;
+            padding-top: 70px;
             justify-items: center;
             span {
                 display: flex;
                 justify-content: center;
             }
+        }
+
+        .block4 {
+            padding-top: 90px;
         }
     }
 }
