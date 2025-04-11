@@ -9,7 +9,10 @@
 @forward "navbar";
 
 // Main-section
-@forward "main";
+@forward "./index/main";
 
-// Banners
-@forward "banners";
+// Section Banners
+@forward "./index/banners";
+
+// Section cards
+@forward "./index/cards";

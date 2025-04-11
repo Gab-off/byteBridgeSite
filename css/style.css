@@ -350,4 +350,36 @@ main {
   font-weight: 600;
 }
 
+.cards {
+  margin-top: 250px;
+  margin-bottom: 250px;
+  display: flex;
+  gap: 30px;
+}
+
+.card {
+  background: red;
+  display: flex;
+  flex-direction: column;
+  width: 364px;
+  height: 400px;
+  padding: 15px 30px;
+  border-radius: 5px;
+}
+.card h3 {
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.875rem;
+  font-weight: 600;
+  background: #fe7f2d;
+}
+.card p {
+  margin-top: 10px;
+  flex: 1;
+  align-self: center;
+  max-width: 14ch;
+  font-size: 1.625rem;
+}
+
 /*# sourceMappingURL=style.css.map */
