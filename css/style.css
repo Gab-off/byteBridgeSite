@@ -358,13 +358,14 @@ main {
 }
 
 .card {
-  background: red;
   display: flex;
   flex-direction: column;
   width: 364px;
   height: 400px;
   padding: 15px 30px;
   border-radius: 5px;
+  overflow: hidden;
+  position: relative;
 }
 .card h3 {
   padding: 5px 10px;
@@ -373,6 +374,8 @@ main {
   font-size: 1.875rem;
   font-weight: 600;
   background: #fe7f2d;
+  position: relative;
+  z-index: 3;
 }
 .card p {
   margin-top: 10px;
@@ -380,6 +383,39 @@ main {
   align-self: center;
   max-width: 14ch;
   font-size: 1.625rem;
+  position: relative;
+  z-index: 2;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background: #fe7f2d;
+  border-radius: 5px;
+  transform: translate(-50%, -50%) scale(0);
+  transform-origin: center;
+  transition: transform 0.8s cubic-bezier(0.5, 0.9, 0.58, 0.06);
+  z-index: 1;
+}
+
+.card:hover::after,
+.card:active::after {
+  transform: translate(-50%, -20px) scale(90);
+}
+
+.card:hover h3,
+.card:active h3 {
+  background: transparent;
+  transition: 0.4s;
+}
+
+.card:hover p,
+.card:active p {
+  color: #fefadc;
 }
 
 footer {
