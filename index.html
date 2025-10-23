@@ -15,7 +15,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <script defer src="./scripts/mobileMenu.js"></script>
   </head>
   <body>
     <nav>
@@ -63,12 +62,13 @@
     </main>
 
     <section class="banners">
-      <div class="container banner first">
-        <h2>
-          Trabalhamos <span>alinhados</span> com a sua <span>ideia</span>.
-        </h2>
-      </div>
+        <div class="container banner first">
+            <h2>
+                Trabalhamos <span>alinhados</span> com a sua <span>ideia</span>.
+            </h2>
+        </div>
     </section>
+
 
     <section class="index-cards container">
       <div class="card">
@@ -86,60 +86,40 @@
     </section>
 
     <footer>
-      <div class="container">
-        <h2 class="footer-title">
-          ByteBrigde <span>realizando</span> serviços com profissionalismo e
-          <span>ética</span>.
-        </h2>
-        <div class="colums">
-          <div class="column">
-            <h3 class="column_title">Contatos</h3>
-            <ul class="contato">
-              <li>
-                <a class="telefone" href="tel:+5511987654321"
-                  >(11) 98765-4321</a
-                >
-              </li>
-              <li>
-                <a
-                  class="tiktok"
-                  href="https://tiktok.com/@bytebridge"
-                  target="_blank"
-                  >@bytebridge</a
-                >
-              </li>
-              <li>
-                <a
-                  class="instagram"
-                  href="https://instagram.com/bytebridge"
-                  target="_blank"
-                  >@bytebridge</a
-                >
-              </li>
-              <li>
-                <a
-                  class="facebook"
-                  href="https://facebook.com/bytebridge"
-                  target="_blank"
-                  >/bytebridge</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="column empresa">
-            <h3 class="column_title">Empresa</h3>
-            <ul>
-              <li><a class="depoimento" href="#">Depoimentos</a></li>
-              <li><a class="email" href="#">Trabalhe conosco</a></li>
-            </ul>
-          </div>
-          <div class="column img">
-            <div class="column-img_logo">
-              <img src="./img/logo-white.svg" alt="" />
+        <div class="container">
+            <h2 class="footer-title">
+                ByteBrigde <span>realizando</span> serviços com profissionalismo e <span>ética</span>.
+            </h2>
+            <hr class="footer-divider" />
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3 class="column_title">Contatos</h3>
+                    <ul class="footer-list">
+                        <li><span class="footer-icon">📱</span><a href="tel:+5511987654321">(11) 98765-4321</a></li>
+                        <li><span class="footer-icon">🎵</span><a href="https://tiktok.com/@bytebridge" target="_blank">@bytebridge</a></li>
+                        <li><span class="footer-icon">📸</span><a href="https://instagram.com/bytebridge" target="_blank">@bytebridge</a></li>
+                        <li><span class="footer-icon">📘</span><a href="https://facebook.com/bytebridge" target="_blank">/bytebridge</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="column_title">Empresa</h3>
+                    <ul class="footer-list footer-company-list">
+                        <li><span class="footer-icon">💬</span><a href="#">Depoimentos</a></li>
+                        <li><span class="footer-icon">✉️</span><a href="#">Trabalhe conosco</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-col-logo">
+                    <div class="footer-logo">
+                        <img src="./img/logo-white.svg" alt="" />
+                    </div>
+                    <hr />
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </footer>
+
+  <script src="./scripts/mobileMenu.js"></script>
+  <script src="./scripts/banner.js"></script>
   </body>
+
 </html>

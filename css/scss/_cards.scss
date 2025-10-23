@@ -74,7 +74,7 @@
             opacity: 60%;
         }
 
-        
+
     }
 }
 
@@ -90,7 +90,7 @@
     }
 }
 
-@include r.respond-to("intermedium") {
+@include r.respond-to("medium") {
     .cards {
         flex-direction: column;
         width: 100%;
