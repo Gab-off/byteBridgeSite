@@ -1,0 +1,26 @@
+// Geral
+@forward "reset";
+@forward "geral";
+@forward "responsive";
+@forward "colors";
+@forward "fontes";
+
+
+//Index
+// Navbar
+@forward "navbar";
+// Main-section
+@forward "./index/main";
+// Section Banners
+@forward "./index/banners";
+// Section cards
+@forward "./index/cards";
+
+//FOOTER
+@forward "footer";
+
+//nossa historia
+@forward "nossa-historia/nossa-historia";
+
+//nossa equipe
+@forward "nossa-equipe/nossa-equipe";
